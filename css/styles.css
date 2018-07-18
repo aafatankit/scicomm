@@ -1,0 +1,35 @@
+body{
+	width: 100% !important;
+	height: 100% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+label{
+	color: #ffc107;
+}
+input{
+	max-width: 484px;
+	border: 2px solid rgb(255, 193, 7) !important;
+	margin-bottom: 3px;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -5,21 +5,31 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-dark">
     <div class="container">
-        <br><br><br><br><br><br>
-        <div class="row">
-            <div class="col-lg-5"></div>
-            <div class="col-lg-2 text-center">
-            <button class="btn btn-outline-warning btn-lg">Generate Promo Code</button>
-            </div>
-            <div class="col-lg-5"></div>
-            
-        </div>
+        <form class="form" method="POST" action="/action_page.php">
+  <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input type="text" class="form-control" name="first-name" id="first-name" placeholder="John" required>
+      <label for="last-name">Last Name:</label>
+      <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Smith" required >
+      <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd"  placeholder="Password" required>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button class="btn btn-outline-warning btn-lg" type="submit">Generate Promo Code</button>
+
+  <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+</form>
     </div>
 </body>
 </html>
