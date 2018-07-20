@@ -5,10 +5,52 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      body{
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+label{
+  color: #ffc107;
+}
+input{
+  max-width: 484px;
+  border: 2px solid rgb(255, 193, 7) !important;
+  margin-bottom: 3px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p{
+  color: #ffc107;
+}
+.radio-inline{
+  padding:0px 20px 0px 20px;
+}
+    </style>
 </head>
 <body class="bg-dark">
     <div class="container">
@@ -20,9 +62,19 @@
       <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Smith" required >
       <label for="email">Email address:</label>
     <input type="email" class="form-control" id="email" placeholder="abc@gmail.com" required>
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd"  placeholder="Password" required>
-  </div>
+      <label for="date">Date Of Birth:</label>
+      <input type="date" class="form-control" id="date" name="date" required >
+      <p>Occupation:</p>
+      <div>
+      <label class="radio-inline">
+      <input type="radio" name="optradio">Student
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked="">Job Seeker
+    </label>
+</div>
+      <label for="Organisation">Organisation Name:</label>
+      <input type="text" class="form-control" name="Organisation" id="Organisation" placeholder="ABC foundation" required>
   <div class="checkbox">
     <label><input type="checkbox"> Remember me</label>
   </div>
